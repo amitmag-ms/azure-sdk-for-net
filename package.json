@@ -1,0 +1,27 @@
+{
+  "name": "azure-sdk-for-net",
+  "version": "1.0.0",
+  "description": "This repository contains official .NET libraries for Azure services. You can find NuGet packages for these libraries [here](packages.md).",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitmag-ms/azure-sdk-for-net.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amitmag-ms/azure-sdk-for-net/issues"
+  },
+  "homepage": "https://github.com/amitmag-ms/azure-sdk-for-net#readme"
+}

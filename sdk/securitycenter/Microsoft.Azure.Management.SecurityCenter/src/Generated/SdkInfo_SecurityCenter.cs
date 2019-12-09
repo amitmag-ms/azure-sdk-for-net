@@ -58,9 +58,49 @@ namespace Microsoft.Azure.Management.Security
       public static readonly String GithubForkName = "Azure";
       public static readonly String GithubBranchName = "master";
       public static readonly String GithubCommidId = "80a458c51677166e259b90316678e16c1ec614a0";
-      public static readonly String CodeGenerationErrors = "";
+      public static readonly String CodeGenerationErrors = "/node_modules/@microsoft.azure/tasks/dist/lib/exclusive-locks.js:94
+            catch {
+                  ^
+
+SyntaxError: Unexpected token {
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (C:\Users\t-ammage\AppData\Roaming\npm\node_modules\autorest\dist\static-loader.js:1:19394)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/node_modules/@microsoft.azure/tasks/dist/main.js:15:10)
+
+System.Management.Automation.RuntimeException: Cannot convert value to type System.String. ---> System.Management.Automation.PSInvalidCastException: Cannot convert value to type System.String. ---> System.InvalidOperationException: Process has exited, so the requested information is not available.
+   at System.Diagnostics.Process.EnsureState(State state)
+   at System.Diagnostics.Process.get_ProcessName()
+   at System.Diagnostics.Process.ToString()
+   at System.Management.Automation.PSObject.ToString(ExecutionContext context, Object obj, String separator, String format, IFormatProvider formatProvider, Boolean recurse, Boolean unravelEnumeratorOnRecurse)
+   --- End of inner exception stack trace ---
+   at System.Management.Automation.PSObject.ToStringParser(ExecutionContext context, Object obj)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at System.Management.Automation.Interpreter.DynamicInstruction`3.Run(InterpretedFrame frame)
+   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)
+   --- End of inner exception stack trace ---
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)
+   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)
+   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)
+   at System.Management.Automation.Interpreter.Interpreter.Run(InterpretedFrame frame)
+   at System.Management.Automation.Interpreter.LightLambda.RunVoid1[T0](T0 arg0)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.PSScriptCmdlet.DoEndProcessing()
+   at System.Management.Automation.CommandProcessorBase.Complete()
+AutoRest code generation for https://github.com/Azure/azure-rest-api-specs/blob/master/specification/security/resource-manager/readme.md failed. Please try again"
       public static readonly String GithubRepoName = "azure-rest-api-specs";
       // END: Code Generation Metadata Section
   }
 }
+
+
+
+
 
